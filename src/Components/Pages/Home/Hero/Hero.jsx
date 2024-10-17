@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
 import bannerImage from '../../../../../src/assets/images/banner.png';
+import { FaSearch } from 'react-icons/fa';
+import { useState } from 'react';
+import Searchbar from './Searchbar';
 
 const Hero = () => {
+
+
     return (
         <div
             className="h-screen relative"
@@ -12,7 +17,6 @@ const Hero = () => {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
             <motion.div
@@ -30,7 +34,7 @@ const Hero = () => {
                     >
                         Make your interior more minimalistic & modern
                     </motion.h1>
-                   
+
                     <motion.p
                         className="text-lg lg:text-xl bg-gradient-to-r from-[#E58411] to-white bg-clip-text text-transparent"
                         initial={{ opacity: 0, y: 20 }}
@@ -39,6 +43,8 @@ const Hero = () => {
                     >
                         Turn your room with panto into a lot more minimalist and modern with ease and speed.
                     </motion.p>
+
+                    <Searchbar></Searchbar>
                 </div>
             </motion.div>
         </div>
