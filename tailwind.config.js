@@ -6,7 +6,16 @@ export default {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#E58411',
+        'secondary': '#1E1E1E',
+        'secondary-bg': "#f7f7f7"
+      },
+      fontFamily: {
+        'primary': ["Poppins", "sans-serif"]
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
