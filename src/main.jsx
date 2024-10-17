@@ -9,7 +9,7 @@ import Roots from './Components/Roots/Roots';
 import Home from './Components/Pages/Home/Home';
 import Shop from './Components/Pages/Shop/Shop';
 import About from './Components/Pages/About/About';
-import Contact from './Components/Contact/Contact';
+import Contact from './Components/Pages/Contact/Contact';
 
 const router = createBrowserRouter([
   {

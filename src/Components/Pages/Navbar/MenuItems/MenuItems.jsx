@@ -46,7 +46,7 @@ const MenuItems = () => {
 
             {/* Mobile Menu Overlay */}
             {isOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-60 z-40">
+                <div className="fixed inset-0 bg-black bg-opacity-60 z-40 text-black">
                     <motion.div
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
