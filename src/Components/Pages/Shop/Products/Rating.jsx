@@ -11,8 +11,9 @@ const Rating = ({ rating }) => {
                 Array.from({ length: totalStars }, (_, index) => {
                     const starIndex = index + 1;
                     return starIndex <= rating ?
-                        (<FaStar key={index} className='text-yellow-500' />) :
-                        (<FaRegStar key={index}/>)
+                        (<FaStar key={index} className='text-yellow-500' />)
+                        :
+                        (<FaRegStar key={index} />)
                 })
             }
         </div>
