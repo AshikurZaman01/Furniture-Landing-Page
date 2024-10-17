@@ -1,4 +1,5 @@
 import WhyChoose from "../../WhyChoose/WhyChoose";
+import Products from "../Shop/Products/Products";
 import Hero from "./Hero/Hero";
 
 const Home = () => {
@@ -7,6 +8,8 @@ const Home = () => {
             <Hero />
 
             <WhyChoose></WhyChoose>
+
+            <Products headline="Best Selling Products"></Products>
         </div>
     );
 };
