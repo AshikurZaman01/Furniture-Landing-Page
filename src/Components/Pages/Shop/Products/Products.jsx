@@ -1,3 +1,5 @@
+import { products } from "../../../../assets/data/products"
+import Product from "./Product"
 
 const Products = ({ headline }) => {
 
@@ -23,6 +25,15 @@ const Products = ({ headline }) => {
                     </div>
                 </div>
                 {/* category tabs */}
+
+
+                {/* products */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    {
+                        products.map((product) => <Product key={product.id} product={product}></Product>)
+                    }
+                </div>
+                {/* products */}
             </div>
 
         </div>
