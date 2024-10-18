@@ -3,6 +3,7 @@ import { getImgUrl } from "../../../../assets/data/getImgUrl";
 import Rating from "./Rating";
 import { CiCirclePlus } from "react-icons/ci";
 
+
 const Product = ({ product }) => {
 
     const { name, category, price, imageUrl, rating } = product || {};
