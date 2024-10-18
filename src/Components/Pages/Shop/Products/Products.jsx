@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { products } from "../../../../assets/data/products"
 import Product from "./Product"
 
 const Products = ({ headline }) => {
 
-    const categories = ['Chair', "Beds", "Sofa", "Lamp"]
+    const categories = ['Chair', "Beds", "Sofa", "Lamp"];
+    const [selectedCategory, setSelectedCategory] = useState("Chair");
+
+    const filterProducts = products.filter((product) => product.category === selectedCategory);
+
 
     return (
         <div>
@@ -18,8 +23,9 @@ const Products = ({ headline }) => {
                             categories.map((category, indx) => (
 
                                 <button key={indx}
-                                    className={`py-1.5 sm:px-5 px-8 rounded-full hover:bg-primary hover:text-white transition-colors `}>
-                                    {category}</button>
+                                    className={`py-1.5 sm:px-5 px-8 rounded-full hover:bg-primary hover:text-white transition-colors ${selectedCategory === category ? "bg-primary text-white" : "hover:bg-primary Hover:text-white"} `} onClick={() => setSelectedCategory(category)}>
+                                    {category}
+                                </button>
                             ))
                         }
                     </div>
@@ -30,7 +36,7 @@ const Products = ({ headline }) => {
                 {/* products */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {
-                        products.map((product) => <Product key={product.id} product={product}></Product>)
+                        filterProducts.map((product) => <Product key={product.id} product={product}></Product>)
                     }
                 </div>
                 {/* products */}

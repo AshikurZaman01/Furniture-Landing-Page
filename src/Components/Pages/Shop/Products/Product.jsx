@@ -20,7 +20,8 @@ const Product = ({ product }) => {
 
                 <div className="mt-5 flex justify-between items-center ">
                     <p className="text-secondary dark:text-white font-bold text-lg">
-                        <sup>$</sup><span>
+                        <sup>$</sup>
+                        <span>
                             {product.price}
                         </span>
                     </p>
