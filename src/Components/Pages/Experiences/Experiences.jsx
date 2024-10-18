@@ -20,7 +20,6 @@ const Experiences = () => {
 
                 </div>
             </div>
-
         </section>
     )
 }
