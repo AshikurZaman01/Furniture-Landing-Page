@@ -1,4 +1,5 @@
 import WhyChoose from "../../WhyChoose/WhyChoose";
+import Experiences from "../Experiences/Experiences";
 import Products from "../Shop/Products/Products";
 import Hero from "./Hero/Hero";
 
@@ -10,6 +11,8 @@ const Home = () => {
             <WhyChoose></WhyChoose>
 
             <Products headline="Best Selling Products"></Products>
+
+            <Experiences></Experiences>
         </div>
     );
 };

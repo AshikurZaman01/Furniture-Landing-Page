@@ -1,5 +1,4 @@
 import Button from "../Utils/Button"
-import btnIcon from "../../assets/images/button-icon.png"
 
 const WhyChoose = () => {
     return (
@@ -15,19 +14,19 @@ const WhyChoose = () => {
                         <h3 className='text-2xl font-semibold mb-3'>Luxury facilities</h3>
                         <p className='text-base mb-2'>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
 
-                        <Button icon={btnIcon} text="More Info"></Button>
+                        <Button  text="More Info"></Button>
                     </div>
                     <div>
                         <h3 className='text-2xl font-semibold mb-3'>Many Choices</h3>
                         <p className='text-base mb-2'>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
 
-                        <Button icon={btnIcon} text="More Info"></Button>
+                        <Button  text="More Info"></Button>
                     </div>
                     <div>
                         <h3 className='text-2xl font-semibold mb-3'>Affordable Price</h3>
                         <p className='text-base mb-2'>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
 
-                        <Button icon={btnIcon} text="More Info"></Button>
+                        <Button  text="More Info"></Button>
                     </div>
 
                 </div>
