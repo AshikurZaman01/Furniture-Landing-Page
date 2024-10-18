@@ -29,6 +29,7 @@
     "redux-thunk": "^3.1.0",
     "socket.io-client": "^4.7.5",
     "sort-by": "^1.2.0",
+    "swiper": "^11.1.14",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
